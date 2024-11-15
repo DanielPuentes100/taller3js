@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../recursos/imagenes/gojo\ satoru.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 300px;
+    opacity: 0.1; 
+    z-index: -1; 
+}
+
+
+header {
+    width: 100%;
+    background-color: #3b4cca; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+header h1 {
+    font-size: 26px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background-color: #2b2b2b; 
+    border: 2px solid #3b4cca; 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b0c4ff; 
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #3b4cca;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: 1px solid #b0c4ff; 
+    box-shadow: 0px 0px 8px rgba(59, 76, 202, 0.6); 
+}
+
+
+button {
+    width: calc(50% - 10px);
+    padding: 12px;
+    margin: 10px 5px;
+    border: none;
+    background-color: #3b4cca;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #b0c4ff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+    background-color: #2b2b2b;
+    box-shadow: none;
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #b0c4ff;
+}
+
+footer p {
+    margin: 5px 0;
+}

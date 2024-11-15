@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Estudiantes</title>
+    <script src="../js/gestionestudiante.js"></script>
+    <script src="../js/utilidad.js"></script>
+    <link rel="stylesheet" href="../css/pagina1.css">
+</head>
+<body>
+
+    <h1>Gestionar Estudiantes</h1>
+
+    <form id="studentForm">
+        <label for="identificacion">Identificación del estudiante (Alfanumérico):</label>
+        <input type="text" id="identificacion" required pattern="[A-Za-z0-9]+" title="Solo caracteres alfanuméricos"> <br><br>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" required pattern="[A-Za-z\s]+" title="Solo caracteres alfabéticos"> <br><br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required> <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required> <br><br>
+
+        <label for="telefono">Teléfono (Opcional):</label>
+        <input type="tel" id="telefono" pattern="\d{8,15}" title="Debe tener entre 8 y 15 dígitos"> <br><br>
+    </form>
+
+    <button onclick="guardar()">Guardar</button>
+    <button onclick="actualizar()">Actualizar</button>
+    <button onclick="eliminar()">Eliminar</button>
+    <button onclick="consultar()">Consultar</button>
+    <button onclick="nuevo()">Nuevo</button>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Matrículas</title>
+   <link rel="stylesheet" href="../css/pagina3.css">
+    <script src="../js/utilidades3.js"></script>
+    <script src="../js/gestionmatriculas.js"></script>
+</head>
+<body>
+
+    <h1>Gestión de Matrículas</h1>
+
+    <form id="matriculaForm">
+        <label for="idMatricula">Identificación de matrícula (Alfanumérico):</label>
+        <input type="text" id="idMatricula" required pattern="[A-Za-z0-9]+" title="Solo caracteres alfanuméricos"> <br><br>
+
+        <label for="idEstudiante">Identificación del estudiante:</label>
+        <input type="text" id="idEstudiante" required> <br><br>
+
+        <label for="codigoPrograma">Código del programa:</label>
+        <input type="text" id="codigoPrograma" required> <br><br>
+
+        <label for="fechaMatricula">Fecha de matrícula:</label>
+        <input type="date" id="fechaMatricula" required> <br><br>
+
+        <label for="estadoMatricula">Estado de la matrícula:</label>
+        <select id="estadoMatricula" required>
+            <option value="">Seleccione un estado</option>
+            <option value="activa">Activa</option>
+            <option value="enProceso">En proceso</option>
+            <option value="finalizada">Finalizada</option>
+            <option value="cancelada">Cancelada</option>
+        </select> <br><br>
+    </form>
+
+    <button onclick="guardar()">Guardar</button>
+    <button onclick="actualizar()">Actualizar</button>
+    <button onclick="eliminar()">Eliminar</button>
+    <button onclick="consultar()">Consultar</button>
+    <button onclick="nuevo()">Nuevo</button>
+    
+</body>
+</html>
